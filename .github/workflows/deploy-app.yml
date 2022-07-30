@@ -10,6 +10,7 @@ jobs:
       - uses: actions/checkout@v3
       - name: check the versions
         run: |
+          $Env:PATH = "C:\opt\apache-maven-3.8.6\bin;$Env:PATH"
           mvn --version
           java --version
 
