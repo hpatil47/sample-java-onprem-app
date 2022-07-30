@@ -20,6 +20,7 @@ jobs:
     steps:
       - name: build the code
         run: |
+           $Env:PATH = "C:\opt\apache-maven-3.8.6\bin;$Env:PATH"
            mvn clean package
 
   deploy:
