@@ -29,4 +29,4 @@ jobs:
     steps:
       - name: deploy the code on onprem
         run: |
-          start /b java -jar .\target\HelloWorld-0.0.1-SNAPSHOT.jar
+          javaw -jar .\target\HelloWorld-0.0.1-SNAPSHOT.jar
